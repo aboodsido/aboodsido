@@ -1,9 +1,10 @@
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="700" height="400"/>
 </div>
-
 <br>
+
 ![Visitor Count](https://profile-counter.glitch.me/aboodsido/count.svg)
+
 <br>
 
 # 💫 About Me:
