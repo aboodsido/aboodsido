@@ -2,6 +2,9 @@
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="700" height="400"/>
 </div>
 
+![Visitor Count](https://profile-counter.glitch.me/aboodsido/count.svg)
+
+
 # 💫 About Me:
 Hello , I'm Abdullah AboSido .. Palestinian from Gaza 🏠🇵🇸<br>I'm Software Developer > Mobile Development using Flutter Framework 👨‍💻<br> I seek to learn a lot of modern technologies used in software development and in the field of mobile application development in particular 🙋🏻‍♂️
 
