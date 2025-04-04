@@ -1,11 +1,9 @@
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="700" height="400"/>
 </div>
-<br>
 
-![Visitor Count](https://profile-counter.glitch.me/aboodsido/count.svg)
 
-<br>
+
 
 # 💫 About Me:
 Hello , I'm Abdullah AboSido .. Palestinian from Gaza 🏠🇵🇸<br>I'm Software Developer > Mobile Development using Flutter Framework 👨‍💻<br> I seek to learn a lot of modern technologies used in software development and in the field of mobile application development in particular 🙋🏻‍♂️
@@ -18,6 +16,7 @@ Hello , I'm Abdullah AboSido .. Palestinian from Gaza 🏠🇵🇸<br>I'm Softwa
 # 💻 Tech Stack:
 ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) 	![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![LINUX](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 # 📊 GitHub Stats:
+![Visitor Count](https://profile-counter.glitch.me/aboodsido/count.svg)
 ![](https://github-readme-stats.vercel.app/api?username=aboodsido&theme=radical&hide_border=true&include_all_commits=false&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=aboodsido&theme=radical&hide_border=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=aboodsido&theme=radical&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
