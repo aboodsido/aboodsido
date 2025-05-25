@@ -10,7 +10,7 @@
 - 🌍 Based in **Gaza**
 - 👨‍💻 Specializing in **Flutter | Dart | Firebase | REST APIs**
 - 🎯 Focused on **high-performance**, **pixel-perfect**, and **responsive** mobile apps
-- 🔭 Currently building an **interactive educational platform** for students in Gaza
+- 🔭 Currently building an **Healthcare platform** for clinics in Gaza
 - ⚙️ Tech I work with: `Flutter`, `Dart`, `Firebase`, `GetX`, `Bloc`, `REST`, `Node.js`, `UI/UX`
 - 📫 Reach me at: **abdullah.abosido2002@gmail.com**
 - 💡 Fun Fact: I turn complex problems into beautiful mobile experiences!
