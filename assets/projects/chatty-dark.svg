@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="170" viewBox="0 0 480 170" role="img" aria-label="Chatty">
+  
+  <defs>
+    <linearGradient id="pj-dark-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#111a33"/>
+    </linearGradient>
+    <linearGradient id="pj-dark-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#13B9FD"/><stop offset="1" stop-color="#5b6cff"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'Cascadia Code', Menlo, Consolas, monospace; }
+    .fade { opacity: 0; animation: fade .7s ease-out forwards; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } }
+  </style>
+  <rect x="0.5" y="0.5" width="479" height="169" rx="16" fill="url(#pj-dark-bg)" stroke="#22304f"/>
+  <rect x="28" y="0" width="64" height="3" rx="1.5" fill="url(#pj-dark-accent)"/>
+  <g transform="translate(28 30)" fill="#13B9FD"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.71 1.71.75.75 0 0 1-1.07 1.05A2.5 2.5 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.71A2.5 2.5 0 0 1 4.5 9h8Z"/></g>
+  <text x="52" y="43" font-size="17" font-weight="700" fill="#e6edf3">Chatty</text>
+  <g transform="translate(420 30)" fill="#8b9bb4"><path transform="scale(.9)" d="M8 .25a.75.75 0 0 1 .67.42l1.88 3.81 4.2.61a.75.75 0 0 1 .42 1.28l-3.04 2.96.72 4.19a.75.75 0 0 1-1.09.79L8 12.33l-3.76 1.98a.75.75 0 0 1-1.09-.79l.72-4.19L.83 6.37a.75.75 0 0 1 .42-1.28l4.2-.61L7.33.67A.75.75 0 0 1 8 .25Z"/>
+      <text x="20" y="12.5" font-size="13" font-weight="600">3</text></g>
+  <text x="28" y="74" font-size="13.5" fill="#8b9bb4">Real-time chat app with authentication, conversations and a</text><text x="28" y="94" font-size="13.5" fill="#8b9bb4">clean, responsive Flutter UI.</text>
+  <g transform="translate(28 128)"><rect width="71" height="24" rx="12" fill="#16213d"/>
+      <text x="35.5" y="16.5" text-anchor="middle" font-size="12" font-weight="600" fill="#9cc9ff">Flutter</text></g><g transform="translate(107 128)"><rect width="78" height="24" rx="12" fill="#16213d"/>
+      <text x="39" y="16.5" text-anchor="middle" font-size="12" font-weight="600" fill="#9cc9ff">Firebase</text></g><g transform="translate(193 128)"><rect width="50" height="24" rx="12" fill="#16213d"/>
+      <text x="25" y="16.5" text-anchor="middle" font-size="12" font-weight="600" fill="#9cc9ff">Chat</text></g>
+</svg>

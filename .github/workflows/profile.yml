@@ -1,0 +1,50 @@
+name: Update profile
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/**', '.github/workflows/profile.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Generate cards
+        run: node scripts/generate.mjs
+        env:
+          # Optional: add a PROFILE_TOKEN secret (classic PAT, read:user + repo)
+          # to include private contributions. Falls back to public data.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
+      - name: Commit changes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets
+          git diff --cached --quiet || git commit -m 'chore: update profile cards'
+          git push
+
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg?color_snake=#02569B&color_dots=#ebedf0,#c6e6ff,#7cc4fa,#2a8fe0,#02569B
+            dist/snake-dark.svg?palette=github-dark&color_snake=#13B9FD&color_dots=#161b22,#0b3a5c,#0f5f93,#1789c9,#13B9FD
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

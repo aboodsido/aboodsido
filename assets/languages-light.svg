@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="230" viewBox="0 0 480 230" role="img" aria-label="Most used languages">
+  
+  <defs>
+    <linearGradient id="lg-light-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f7ff"/>
+    </linearGradient>
+    <linearGradient id="lg-light-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0aa2e6"/><stop offset="1" stop-color="#4b5bf0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'Cascadia Code', Menlo, Consolas, monospace; }
+    .fade { opacity: 0; animation: fade .7s ease-out forwards; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } }
+  </style>
+  <clipPath id="lg-light-bar"><rect width="424" height="10" rx="5"/></clipPath>
+  <rect x="0.5" y="0.5" width="479" height="229" rx="16" fill="url(#lg-light-bg)" stroke="#d8e2f0"/>
+  <text x="28" y="44" font-size="17" font-weight="700" fill="#1f2328">Most used languages</text>
+  <text x="452" y="44" text-anchor="end" font-size="12" fill="#57606a">public repos, by code size</text>
+  <g transform="translate(28 66)" clip-path="url(#lg-light-bar)"><rect x="0" y="0" width="376.13607644168763" height="10" fill="#00B4AB"/><rect x="376.13607644168763" y="0" width="43.51461636129135" height="10" fill="#e34c26"/><rect x="419.650692802979" y="0" width="4.349307197021022" height="10" fill="#7355dd"/></g>
+  <g class="fade" style="animation-delay:0s" transform="translate(28 112)">
+      <circle cx="6" cy="-4" r="6" fill="#00B4AB"/>
+      <text x="20" y="0" font-size="14" font-weight="600" fill="#1f2328">Dart</text>
+      <text x="200" y="0" text-anchor="end" font-size="13" fill="#57606a">88.7%</text>
+    </g><g class="fade" style="animation-delay:0.08s" transform="translate(250 112)">
+      <circle cx="6" cy="-4" r="6" fill="#e34c26"/>
+      <text x="20" y="0" font-size="14" font-weight="600" fill="#1f2328">HTML</text>
+      <text x="200" y="0" text-anchor="end" font-size="13" fill="#57606a">10.3%</text>
+    </g><g class="fade" style="animation-delay:0.16s" transform="translate(28 146)">
+      <circle cx="6" cy="-4" r="6" fill="#7355dd"/>
+      <text x="20" y="0" font-size="14" font-weight="600" fill="#1f2328">C#</text>
+      <text x="200" y="0" text-anchor="end" font-size="13" fill="#57606a">1.0%</text>
+    </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Abdullah Abo-Sido, Flutter Developer">
+  
+  <defs>
+    <linearGradient id="hd-light-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f7ff"/>
+    </linearGradient>
+    <linearGradient id="hd-light-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0aa2e6"/><stop offset="1" stop-color="#4b5bf0"/>
+    </linearGradient>
+  </defs>
+  
+  <style>
+    text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'Cascadia Code', Menlo, Consolas, monospace; }
+    .fade { opacity: 0; animation: fade .7s ease-out forwards; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    
+    .blob { animation: drift 14s ease-in-out infinite alternate; transform-origin: center; }
+    .blob2 { animation-duration: 18s; animation-direction: alternate-reverse; }
+    @keyframes drift { from { transform: translate(0,0) scale(1); } to { transform: translate(-40px, 20px) scale(1.15); } }
+    .cursor { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } }
+  </style>
+  <clipPath id="hd-light-clip"><rect width="1000" height="300" rx="20"/></clipPath>
+  <g clip-path="url(#hd-light-clip)">
+    <rect width="1000" height="300" fill="url(#hd-light-bg)"/>
+    <circle class="blob" cx="860" cy="40" r="170" fill="#0aa2e6" opacity="0.12"/>
+    <circle class="blob blob2" cx="980" cy="260" r="150" fill="#4b5bf0" opacity="0.1"/>
+    <circle class="blob" cx="80" cy="320" r="120" fill="#02569B" opacity="0.06"/>
+  </g>
+  <rect x="0.5" y="0.5" width="999" height="299" rx="20" fill="none" stroke="#d8e2f0"/>
+
+  <g class="fade">
+    <text x="60" y="78" font-size="16" fill="#57606a" font-weight="600" letter-spacing="3">HELLO, WORLD — I'M</text>
+    <text x="58" y="138" font-size="54" font-weight="800" fill="#1f2328" letter-spacing="-1">Abdullah <tspan fill="url(#hd-light-accent)">Abo-Sido</tspan></text>
+  </g>
+  <g class="fade" style="animation-delay:.15s">
+    <text x="60" y="182" font-size="21" fill="#57606a">Flutter developer crafting fast, pixel-perfect mobile apps.</text>
+  </g>
+  <g class="fade" style="animation-delay:.3s"><g transform="translate(60 214)"><rect width="166.79999999999998" height="32" rx="16" fill="#e9f2ff" stroke="#d8e2f0"/>
+      <text x="83.39999999999999" y="21" text-anchor="middle" font-size="13.5" fill="#0b5cad" font-weight="600">📍 Gaza, Palestine</text></g><g transform="translate(236.79999999999998 214)"><rect width="113.6" height="32" rx="16" fill="#e9f2ff" stroke="#d8e2f0"/>
+      <text x="56.8" y="21" text-anchor="middle" font-size="13.5" fill="#0b5cad" font-weight="600">💼 Optimiza</text></g><g transform="translate(360.4 214)"><rect width="197.2" height="32" rx="16" fill="#e9f2ff" stroke="#d8e2f0"/>
+      <text x="98.6" y="21" text-anchor="middle" font-size="13.5" fill="#0b5cad" font-weight="600">📱 3+ years of Flutter</text></g></g>
+
+  <g class="fade" style="animation-delay:.45s" transform="translate(690 70)">
+    <rect width="260" height="170" rx="14" fill="#ffffff" stroke="#d8e2f0" opacity="0.92"/>
+    <circle cx="20" cy="20" r="5" fill="#ff5f57"/><circle cx="37" cy="20" r="5" fill="#febc2e"/><circle cx="54" cy="20" r="5" fill="#28c840"/>
+    <text class="mono" x="236" y="24" text-anchor="end" font-size="11" fill="#57606a">main.dart</text>
+    <g transform="translate(20 58)"><text class="mono" x="0" y="0" font-size="13" xml:space="preserve"><tspan fill="#4b5bf0">final </tspan><tspan fill="#0aa2e6">dev</tspan><tspan fill="#57606a"> = </tspan><tspan fill="#0aa2e6">Developer</tspan><tspan fill="#57606a">(</tspan></text><text class="mono" x="0" y="22" font-size="13" xml:space="preserve"><tspan fill="#57606a">  name: </tspan><tspan fill="#1a7f37">'Abdullah'</tspan><tspan fill="#57606a">,</tspan></text><text class="mono" x="0" y="44" font-size="13" xml:space="preserve"><tspan fill="#57606a">  loves: </tspan><tspan fill="#1a7f37">'Flutter'</tspan><tspan fill="#57606a">,</tspan></text><text class="mono" x="0" y="66" font-size="13" xml:space="preserve"><tspan fill="#57606a">  ships: </tspan><tspan fill="#4b5bf0">true</tspan><tspan fill="#57606a">,</tspan></text><text class="mono" x="0" y="88" font-size="13" xml:space="preserve"><tspan fill="#57606a">);</tspan></text>
+      <rect class="cursor" x="30" y="77" width="8" height="14" fill="#0aa2e6"/>
+    </g>
+  </g>
+</svg>
