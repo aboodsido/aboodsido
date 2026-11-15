@@ -42,6 +42,10 @@ class Abdullah extends Developer {
 ## Featured projects
 
 <p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/agrieye-ai-dark.svg"><img alt="AgriEye AI (private project)" src="assets/projects/agrieye-ai-light.svg" width="98%"></picture>
+</p>
+
+<p align="center">
   <a href="https://github.com/aboodsido/wireless_mobile_controller"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/wireless_mobile_controller-dark.svg"><img alt="Wireless Mobile Controller" src="assets/projects/wireless_mobile_controller-light.svg" width="49%"></picture></a>
   <a href="https://github.com/aboodsido/pet"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/pet-dark.svg"><img alt="PET Expense Tracker" src="assets/projects/pet-light.svg" width="49%"></picture></a>
 </p>

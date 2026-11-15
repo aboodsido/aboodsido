@@ -10,6 +10,14 @@ const OUT = new URL('../assets/', import.meta.url);
 // so the text lives here.
 const PROJECTS = [
   {
+    repo: 'agrieye-ai',
+    title: 'AgriEye AI',
+    desc: 'Diagnoses plant diseases from a single photo using AI. Snap or pick a leaf image, get a clear diagnosis in seconds, and keep a history of past scans. Flutter app backed by a lightweight Cloudflare Worker that talks to Gemini.',
+    tags: ['Flutter', 'Gemini AI', 'Cloudflare Workers', 'iOS & Android'],
+    private: true,
+    wide: true,
+  },
+  {
     repo: 'wireless_mobile_controller',
     title: 'Wireless Mobile Controller',
     desc: 'Turns a phone into a wireless touchpad for Windows. Pair by QR code, then stream gestures to a .NET WebSocket server.',
@@ -318,8 +326,8 @@ function languages(t, mode, d) {
 // ---------- project cards ----------
 
 function project(t, mode, p, repo) {
-  const w = 480, h = 170, id = `pj-${mode}`;
-  const lines = wrap(p.desc, 60).slice(0, 3);
+  const w = p.wide ? 980 : 480, h = 170, id = `pj-${mode}`;
+  const lines = wrap(p.desc, p.wide ? 125 : 60).slice(0, 3);
   let x = 28;
   const tags = p.tags.map((tag) => {
     const tw = tag.length * 7 + 22;
@@ -333,13 +341,18 @@ function project(t, mode, p, repo) {
     ? `<g transform="translate(${w - 60} 30)" fill="${t.muted}"><path transform="scale(.9)" d="M8 .25a.75.75 0 0 1 .67.42l1.88 3.81 4.2.61a.75.75 0 0 1 .42 1.28l-3.04 2.96.72 4.19a.75.75 0 0 1-1.09.79L8 12.33l-3.76 1.98a.75.75 0 0 1-1.09-.79l.72-4.19L.83 6.37a.75.75 0 0 1 .42-1.28l4.2-.61L7.33.67A.75.75 0 0 1 8 .25Z"/>
       <text x="20" y="12.5" font-size="13" font-weight="600">${stars}</text></g>`
     : '';
+  const privateSvg = p.private
+    ? `<g transform="translate(${w - 116} 22)"><rect width="88" height="26" rx="13" fill="${t.chip}" stroke="${t.border}"/>
+      <g transform="translate(14 6) scale(.85)" fill="${t.chipText}"><path d="M4 4a4 4 0 0 1 8 0v2h.25c.97 0 1.75.78 1.75 1.75v5.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-5.5C2 6.78 2.78 6 3.75 6H4Zm8.25 3.5h-8.5a.25.25 0 0 0-.25.25v5.5c0 .14.11.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25ZM10.5 6V4a2.5 2.5 0 1 0-5 0v2Z"/></g>
+      <text x="34" y="17.5" font-size="12" font-weight="600" fill="${t.chipText}">Private</text></g>`
+    : '';
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(p.title)}">
   ${defs(t, id)}${style()}
   ${frame(t, id, w, h)}
   <rect x="28" y="0" width="64" height="3" rx="1.5" fill="url(#${id}-accent)"/>
   <g transform="translate(28 30)" fill="${t.a1}"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.71 1.71.75.75 0 0 1-1.07 1.05A2.5 2.5 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.71A2.5 2.5 0 0 1 4.5 9h8Z"/></g>
   <text x="52" y="43" font-size="17" font-weight="700" fill="${t.text}">${esc(p.title)}</text>
-  ${starSvg}
+  ${starSvg}${privateSvg}
   ${lines.map((l, i) => `<text x="28" y="${74 + i * 20}" font-size="13.5" fill="${t.muted}">${esc(l)}</text>`).join('')}
   ${tags}
 </svg>`;
