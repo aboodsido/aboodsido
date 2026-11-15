@@ -22,7 +22,7 @@
   <g class="fade" style="animation-delay:0s" transform="translate(28 72)">
       <rect width="206" height="60" rx="12" fill="#1a2540" opacity="0.7"/>
       <g transform="translate(16 22)" fill="#13B9FD"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8.75-3.75v3.44l2.03 2.03a.75.75 0 1 1-1.06 1.06L7.47 8.53a.75.75 0 0 1-.22-.53v-3.75a.75.75 0 0 1 1.5 0Z"/></g>
-      <text x="44" y="27" font-size="22" font-weight="800" fill="#e6edf3">304</text>
+      <text x="44" y="27" font-size="22" font-weight="800" fill="#e6edf3">305</text>
       <text x="44" y="46" font-size="12" fill="#8b9bb4">Contributions</text>
     </g><g class="fade" style="animation-delay:0.1s" transform="translate(250 72)">
       <rect width="206" height="60" rx="12" fill="#1a2540" opacity="0.7"/>
@@ -37,7 +37,7 @@
     </g><g class="fade" style="animation-delay:0.30000000000000004s" transform="translate(250 144)">
       <rect width="206" height="60" rx="12" fill="#1a2540" opacity="0.7"/>
       <g transform="translate(16 22)" fill="#13B9FD"><path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.12v5.26a2.25 2.25 0 1 1-1.5 0V5.37A2.25 2.25 0 0 1 1.5 3.25Zm5.68-1.03L9.53.47a.25.25 0 0 1 .43.18V2h1.29A2.75 2.75 0 0 1 14 4.75v5.88a2.25 2.25 0 1 1-1.5 0V4.75c0-.69-.56-1.25-1.25-1.25H9.96v1.35a.25.25 0 0 1-.43.18L7.18 2.68a.25.25 0 0 1 0-.36Z"/></g>
-      <text x="44" y="27" font-size="22" font-weight="800" fill="#e6edf3">299</text>
+      <text x="44" y="27" font-size="22" font-weight="800" fill="#e6edf3">12</text>
       <text x="44" y="46" font-size="12" fill="#8b9bb4">Pull requests</text>
     </g>
 </svg>
